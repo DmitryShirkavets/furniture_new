@@ -1,0 +1,46 @@
+.contacts {
+  $contacts: &;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+
+  @media (max-width: 900px) {
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    #{$contacts}__info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      #{$contacts}__subtitle {
+        @include text(12px, 400, 18px, #babcc3);
+      }
+
+      #{$contacts}__link {
+        @include text(22px, 400, 26px, $mainColor);
+        letter-spacing: -0.02em;
+
+        @media (max-width: 900px) {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 12px;
+        }
+
+        span {
+            @include text(22px, 600, 26px, $mainColor);
+
+            @media (max-width: 900px) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+        }
+      }
+    }
+  }
+}

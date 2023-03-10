@@ -1,0 +1,28 @@
+.location {
+  $location: &;
+
+  &__icon{
+    width: 16px;
+    height: 16px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    #{$location}__city {
+      color: $primaryColor;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+
+    #{$location}__adress {
+      color: $secondaryColor;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}

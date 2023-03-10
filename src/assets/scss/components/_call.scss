@@ -1,0 +1,33 @@
+.call {
+  $call: &;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    #{$call}__subtitle {
+      color: $lightColor;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+
+    #{$call}__phone {
+      color: $secondaryColor;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

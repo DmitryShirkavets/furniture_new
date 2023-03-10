@@ -1,0 +1,102 @@
+@import "./normalize.scss";
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./header.scss";
+@import "./components/call";
+@import "./components/location";
+@import "./components/mini-menu";
+@import "./components/logo";
+
+@import "./menu/menu";
+@import "./components/search";
+
+@import "./components/hamburger";
+
+@import "./main/main";
+@import "./components/swiper";
+@import "./components/buttons/btn-orange";
+@import "./components/buttons/btn-default";
+@import "./components/buttons/btn-outline";
+@import "./components/buttons/btn-material";
+@import "./components/buttons/btn-filter";
+
+@import "./catalog";
+@import "./interior-doors";
+@import "./options";
+@import "./components/card";
+
+@import "./components/filters/filter-prices";
+
+@import "./furniture";
+@import "./publicity";
+@import "./gallery";
+@import "./advantages";
+@import "./invite";
+
+@import "./components/form.scss";
+
+@import "./reviews";
+@import "./brands";
+@import "./footer";
+
+@import "./components/contacts";
+
+@import "./components/socials";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter";
+}
+
+.container {
+  max-width: 1176px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    width: auto;
+  }
+}
+
+.swiper-wrapper {
+  // height: 400px;
+}
+
+.section__title {
+  @include text(32px, 600, 32px, $secondaryColor);
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

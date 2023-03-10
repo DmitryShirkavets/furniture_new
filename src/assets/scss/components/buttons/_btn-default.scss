@@ -1,0 +1,25 @@
+.btn--default{
+  padding: 8px 16px;
+  @include text(14px, 500, 24px, $secondaryColor);
+  background-color: $btnDefautColor;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+
+  &:hover {
+    background-color: #ffe9df;
+    color: $primaryColor;
+  }
+
+  &.active {
+    background-color: $secondaryColor;
+    color: $mainColor;
+  }
+}
