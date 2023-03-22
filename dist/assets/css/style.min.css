@@ -1164,6 +1164,7 @@ button {
 .options {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 12px;
   border: none; }
@@ -1992,7 +1993,7 @@ body {
   font-family: "Inter"; }
 
 .container {
-  max-width: 1176px;
+  max-width: 1216px;
   margin: 0 auto;
   width: 90%;
   padding: 0 20px; }
