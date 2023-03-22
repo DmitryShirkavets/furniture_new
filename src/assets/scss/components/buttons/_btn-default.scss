@@ -1,25 +1,28 @@
 .btn--default{
   padding: 8px 16px;
-  @include text(14px, 500, 24px, $secondaryColor);
+  @include text(14px,500,24px,$secondaryColor);
   background-color: $btnDefautColor;
+  border-top-left-radius: unset !important;
+  border-top-right-radius: unset !important;
   transition: 0.3s all;
   -webkit-transition: 0.3s all;
   -moz-transition: 0.3s all;
   -ms-transition: 0.3s all;
   -o-transition: 0.3s all;
-  border-radius: 26px;
-  -webkit-border-radius: 26px;
-  -moz-border-radius: 26px;
-  -ms-border-radius: 26px;
-  -o-border-radius: 26px;
+  border-radius: 26px !important;
+  -webkit-border-radius: 26px !important;
+  -moz-border-radius: 26px !important;
+  -ms-border-radius: 26px !important;
+  -o-border-radius: 26px !important;
 
-  &:hover {
+   &:hover{
     background-color: #ffe9df;
     color: $primaryColor;
+    border-color: #ffe9df !important;
   }
 
   &.active {
-    background-color: $secondaryColor;
-    color: $mainColor;
+    background-color: $secondaryColor !important;
+    color: $mainColor !important;
   }
 }

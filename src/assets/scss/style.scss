@@ -46,6 +46,7 @@ button {
 @import "./components/buttons/btn-default";
 @import "./components/buttons/btn-outline";
 @import "./components/buttons/btn-material";
+@import "./components/buttons/btn-add-material";
 @import "./components/buttons/btn-filter";
 
 @import "./catalog";
@@ -70,6 +71,8 @@ button {
 @import "./components/contacts";
 
 @import "./components/socials";
+
+@import "./components/price";
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 

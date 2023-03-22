@@ -16,6 +16,8 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
+      width: fit-content;
+      border-bottom: 1px dashed #BABCC3;
     }
 
     #{$location}__adress {
