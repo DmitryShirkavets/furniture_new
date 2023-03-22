@@ -545,6 +545,10 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 1px dashed #BABCC3;
 }
 
 .location__wrapper .location__adress {
@@ -1344,6 +1348,41 @@ button {
 
 .btn--material.active img {
     width: 80%;
+}
+
+.btn--add-material {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #313440;
+    outline: 1px solid #F85B18;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+}
+
+.btn--add-material:hover {
+    outline: 1px solid #000;
+    color: #ffffff;
+    background-color: #313440;
+    outline-color: #313440;
 }
 
 .btn--filter {
@@ -2772,6 +2811,71 @@ button {
     align-items: center;
     padding-left: 48px;
     gap: 16px;
+}
+
+.price {
+    display: none;
+    background-color: #fff;
+    padding: 47px 0 35px;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+}
+
+.price__section-title {
+    margin-bottom: 8px;
+}
+
+.price__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #313440;
+    margin: 32px 0 16px;
+}
+
+.price__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price__block .price__row {
+    display: grid;
+    gap: 56px;
+    padding: 8px 12px;
+    background-color: #F4F4F5;
+}
+
+.price__block .price__row.col-3 {
+    grid-template-columns: 1fr 433px 1fr;
+}
+
+.price__block .price__row .price__item {
+    text-align: start;
+}
+
+.price__block .price__row .price__item.item_type {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7E8290;
+}
+
+.price__block .price__row .price__item.item_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #313440;
+}
+
+.price__block .price__row .price__item.item_price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #313440;
 }
 
 body {
