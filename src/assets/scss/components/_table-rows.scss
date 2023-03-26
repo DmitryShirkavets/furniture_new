@@ -1,0 +1,32 @@
+.table-rows{
+    margin-top: 32px;
+
+    tr{
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    tr:nth-child(odd){
+        background-color: #F4F4F5;
+    }
+
+    tr:nth-child(even){
+        background-color: #FFF;
+    }
+
+    td{
+        padding: 8px 12px;
+        @include text(16px, 400, 24px, $secondaryColor);
+        
+        &:first-child{
+            min-width: 352px;
+            @include text(16px, 400, 24px, #7E8290);
+
+            @media (max-width: 800px) {
+                min-width: unset;
+            }
+        }
+    }
+}

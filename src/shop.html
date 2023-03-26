@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body class="shop-page">
+    <div class="menu__mobile">
+      <div class="menu__mobile-wrapper">
+        <div class="menu__mobile-x">
+          <div class="hamburger-box-x">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <div class="location">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.62669 9.45334C9.77544 9.45334 10.7067 8.52209 10.7067 7.37334C10.7067 6.22458 9.77544 5.29333 8.62669 5.29333C7.47794 5.29333 6.54669 6.22458 6.54669 7.37334C6.54669 8.52209 7.47794 9.45334 8.62669 9.45334Z"
+              stroke="#F85B18"
+              stroke-width="1.5"
+            />
+            <path
+              d="M3.04007 6.16C4.35341 0.386667 12.9067 0.393334 14.2134 6.16667C14.9801 9.55333 12.8734 12.42 11.0267 14.1933C9.68674 15.4867 7.56674 15.4867 6.22007 14.1933C4.38007 12.42 2.27341 9.54667 3.04007 6.16Z"
+              stroke="#F85B18"
+              stroke-width="1.5"
+            />
+          </svg>
+
+          <div class="location__wrapper">
+            <a class="location__city" href="#">г. Волгоград</a>
+            <h4 class="location__adress">ул. Каннуникова д 6/1</h4>
+          </div>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./catalog.html">Входные двери</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./catalog.html"
+              >Межкомнатные двери</a
+            >
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Фурнитура</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Оплата</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Доставка и гарантия</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./shop.html">О магазине</a>
+          </li>
+        </ul>
+        <div class="call">
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.813354"
+              y="0.5"
+              width="32"
+              height="32"
+              rx="16"
+              fill="#7E8290"
+            />
+            <path
+              d="M23.46 20.72C23.46 20.96 23.4067 21.2067 23.2933 21.4467C23.18 21.6867 23.0333 21.9133 22.84 22.1267C22.5133 22.4867 22.1533 22.7467 21.7467 22.9133C21.3467 23.08 20.9133 23.1667 20.4467 23.1667C19.7667 23.1667 19.04 23.0067 18.2733 22.68C17.5067 22.3533 16.74 21.9133 15.98 21.36C15.2133 20.8 14.4867 20.18 13.7933 19.4933C13.1067 18.8 12.4867 18.0733 11.9333 17.3133C11.3867 16.5533 10.9467 15.7933 10.6267 15.04C10.3067 14.28 10.1467 13.5533 10.1467 12.86C10.1467 12.4067 10.2267 11.9733 10.3867 11.5733C10.5467 11.1667 10.8 10.7933 11.1533 10.46C11.58 10.04 12.0467 9.83333 12.54 9.83333C12.7267 9.83333 12.9133 9.87333 13.08 9.95333C13.2533 10.0333 13.4067 10.1533 13.5267 10.3267L15.0733 12.5067C15.1933 12.6733 15.28 12.8267 15.34 12.9733C15.4 13.1133 15.4333 13.2533 15.4333 13.38C15.4333 13.54 15.3867 13.7 15.2933 13.8533C15.2067 14.0067 15.08 14.1667 14.92 14.3267L14.4133 14.8533C14.34 14.9267 14.3067 15.0133 14.3067 15.12C14.3067 15.1733 14.3133 15.22 14.3267 15.2733C14.3467 15.3267 14.3667 15.3667 14.38 15.4067C14.5 15.6267 14.7067 15.9133 15 16.26C15.3 16.6067 15.62 16.96 15.9667 17.3133C16.3267 17.6667 16.6733 17.9933 17.0267 18.2933C17.3733 18.5867 17.66 18.7867 17.8867 18.9067C17.92 18.92 17.96 18.94 18.0067 18.96C18.06 18.98 18.1133 18.9867 18.1733 18.9867C18.2867 18.9867 18.3733 18.9467 18.4467 18.8733L18.9533 18.3733C19.12 18.2067 19.28 18.08 19.4333 18C19.5867 17.9067 19.74 17.86 19.9067 17.86C20.0333 17.86 20.1667 17.8867 20.3133 17.9467C20.46 18.0067 20.6133 18.0933 20.78 18.2067L22.9867 19.7733C23.16 19.8933 23.28 20.0333 23.3533 20.2C23.42 20.3667 23.46 20.5333 23.46 20.72Z"
+              fill="white"
+            />
+          </svg>
+          <div class="call__wrapper">
+            <h4 class="call__subtitle">Звоните прямо сейчас:</h4>
+            <a class="call__phone" href="tel:+78442250300"
+              >+7 (844) <span>225-03-00</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__top">
+            <div class="header__logo logo">
+              <a class="logo__link" href="/">
+                <img
+                  class="logo__img"
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+              <h1 class="header__title">
+                Межкомнатные, входные<br />
+                двери и фурнитура к ним
+              </h1>
+            </div>
+            <div class="header__location location">
+              <img
+                class="location__icon"
+                src="./assets/images/location.svg"
+                alt="location"
+              />
+              <div class="location__wrapper">
+                <a class="location__city" href="#">г. Волгоград</a>
+                <h4 class="location__adress">ул. Каннуникова д 6/1</h4>
+              </div>
+            </div>
+            <div class="header__call call">
+              <img
+                class="call__icon"
+                src="./assets/images/callme.svg"
+                alt="phone"
+              />
+              <div class="call__wrapper">
+                <h4 class="call__subtitle">Звоните прямо сейчас:</h4>
+                <a class="call__phone" href="tel:+78442250300"
+                  >+7 (844) <span>225-03-00</span></a
+                >
+              </div>
+            </div>
+            <div class="header__mini-menu mini-menu">
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/ranking.svg"
+                    alt="ranking"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/chart.svg"
+                    alt="chart"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/shopping-cart.svg"
+                    alt="cart"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./catalog.html"
+                  >Входные двери</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./catalog.html"
+                  >Межкомнатные двери</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Фурнитура</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Оплата</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка и гарантия</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./shop.html">О магазине</a>
+              </li>
+              <li class="menu__list-item search">
+                <input class="search__input" type="text" placeholder="Поиск" />
+                <img
+                  class="search__icon"
+                  src="./assets/images/search-normal.svg"
+                  alt="search"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="header__mobile">
+            <div class="search">
+              <input class="search__input" type="text" placeholder="Поиск" />
+              <img
+                class="search__icon"
+                src="./assets/images/search-normal.svg"
+                alt="search"
+              />
+            </div>
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <div class="menu__dropdown"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__wrapper">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item active">
+              <a class="breadcrumbs__link" href="#">О магазине</a>
+            </li>
+          </ul>
+          <h1 class="shop__title section__title">
+            Единственная официальная розничная сеть фабрики «Дверь.рф»
+          </h1>
+          <div class="shop__inner">
+            <div class="shop__text">
+              Уважаемые покупатели! В связи с тем, что к нам участились
+              обращения с жалобами от клиентов компаний, выдающих себя за
+              официальные розничные магазины фабрики «Браво», сообщаем:
+              официальная розничная сеть магазинов фабрики «Браво» включает в
+              себя только те торговые точки, которые указаны на единственном
+              розничном сайте www.dveribravo.ru. Ко всем остальным компаниям,
+              торгующим продукцией фабрики «Браво», мы не имеем отношения.
+              «Дверь.рф» — это розничная сеть фабрики дверей «Браво»,
+              представленная интернет-магазином, магазинами при складе и
+              фирменными салонами в Москве, Санкт-Петербурге, Нижнем Новгороде,
+              Рязани и Ростове-на-Дону. Доставка осуществляется по всей России.
+            </div>
+            <div class="shop__block-text block-text">
+              <h3 class="shop__subtitle">
+                Приходя в любой из наших магазинов, вы можете рассчитывать на:
+              </h3>
+              <ul class="shop__list">
+                <li class="shop__list-item">
+                  покупку напрямую со склада фабрики, без посредников;
+                </li>
+                <li class="shop__list-item">
+                  просторную выставку, на которой представлен практически весь
+                  ассортимент продукции;
+                </li>
+                <li class="shop__list-item">низкие цены от производителя;</li>
+                <li class="shop__list-item">
+                  консультации грамотных специалистов;
+                </li>
+                <li class="shop__list-item">
+                  возможность забрать двери со склада самостоятельно или
+                  заказать доставку;
+                </li>
+                <li class="shop__list-item">
+                  гарантийные обязательства, возврат и обмен без проблем;
+                </li>
+                <li class="shop__list-item">
+                  услуги квалифицированной установки дверей.
+                </li>
+              </ul>
+            </div>
+
+            <div class="shop__block">
+              <h2 class="shop__title section__title">Что мы делаем</h2>
+
+              <div class="block__left-image">
+                <img
+                  src="./assets/images/shop1.png"
+                  alt="shop"
+                  class="block__left-image-img"
+                />
+                <p class="block__left-image-text">
+                  Уважаемые покупатели! В связи с тем, что к нам участились
+                  обращения с жалобами от клиентов компаний, выдающих себя за
+                  официальные розничные магазины фабрики «Браво», сообщаем:
+                  официальная розничная сеть магазинов фабрики «Браво» включает
+                  в себя только те торговые точки, которые указаны на
+                  единственном розничном сайте www.dveribravo.ru. Ко всем
+                  остальным компаниям, торгующим продукцией фабрики «Браво», мы
+                  не имеем отношения.
+
+                  <br /><br />«Дверь.рф» — это розничная сеть фабрики дверей
+                  «Браво», представленная интернет-магазином, магазинами при
+                  складе и фирменными салонами в Москве, Санкт-Петербурге,
+                  Нижнем Новгороде, Рязани и Ростове-на-Дону. Доставка
+                  осуществляется по всей России.
+                </p>
+              </div>
+            </div>
+
+            <div class="shop__block">
+              <h2 class="shop__title section__title">Отображение данных</h2>
+              <div class="block__rows">
+                <table class="table-rows">
+                  <tbody>
+                    <tr>
+                      <td>Тип коробки</td>
+                      <td>Открытый</td>
+                    </tr>
+                    <tr>
+                      <td>Особенности:</td>
+                      <td>
+                        Стабильно точные геометрические показатели, которые
+                        обеспечиваются высокой степенью автоматизации и
+                        роботизации производства.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Отделка внутри:</td>
+                      <td>
+                        Декоративная панель с возможностью замены. Толщина 16
+                        мм, Экошпон, зеркало Reflex.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Отделка снаружи:</td>
+                      <td>Стальной лист с декоративным тиснением</td>
+                    </tr>
+                    <tr>
+                      <td>Толщина коробки</td>
+                      <td>129 мм</td>
+                    </tr>
+                    <tr>
+                      <td>Толщина стали короба</td>
+                      <td>1,4 мм</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="shop__block">
+              <h2 class="shop__title section__title">Таблица</h2>
+              <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Название колонки</th>
+                      <th>Название колонки</th>
+                      <th>Название колонки</th>
+                      <th>Название колонки</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                    </tr>
+                    <tr>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                    </tr>
+                    <tr>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                    </tr>
+                    <tr>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                      <td>Данные строки</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="shop__block">
+              <form class="shop__form" action="">
+                <h2 class="shop__title section__title">Форма обратной связи</h2>
+                <div class="shop__form-body">
+                  <div class="shop__form-row">
+                    <label for="name" class="shop__form-label"
+                      >Ваше имя <span>*</span></label
+                    >
+                    <input type="text" id="name" />
+                  </div>
+
+                  <div class="shop__form-row">
+                    <label for="phone" class="shop__form-label required"
+                      >Телефон <span>*</span></label
+                    >
+                    <input type="text" id="phone" />
+                  </div>
+                  <div class="shop__form-row">
+                    <label for="email" class="shop__form-label required"
+                      >Ваш Email <span>*</span></label
+                    >
+                    <input type="text" id="email" />
+                  </div>
+
+                  <div class="shop__form-row">
+                    <label for="message" class="shop__form-label required"
+                      >Ваше сообщение <span>*</span></label
+                    >
+                    <textarea id="message"></textarea>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      id="policity"
+                    />
+                    <label class="checkbox__label" for="policity"
+                      >Соглашаюсь с
+                      <a class="link"
+                        >Политикой обработки персональных данных</a
+                      ></label
+                    >
+                  </div>
+
+                  <button class="btn--orange">
+                    <img
+                      src="./assets/images/sms-tracking.svg"
+                      alt=""
+                      class="btn--orange-img"
+                    />
+                    Отправить сообщение
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__wrapper">
+          <h2 class="section__title gallery__title">Фото магазина</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery1.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery3.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery4.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery2.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery5.png"
+                alt=""
+              />
+            </li>
+          </ul>
+
+          <div class="swiper gallery__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery1.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery3.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery4.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination gallery__pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__content">
+          <h2 class="footer__title">Как с нами связаться</h2>
+          <ul class="footer__contacts contacts">
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts1.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Звоните прямо сейчас:</h3>
+                <a class="contacts__link" href="tel:+78442250300"
+                  >+7 (844) <span>225-03-00</span></a
+                >
+              </div>
+            </li>
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts2.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Адрес:</h3>
+                <a class="contacts__link" href="#"
+                  >Волгоград, ул. Канунникова 6/1</a
+                >
+              </div>
+            </li>
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts3.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Режим работы:</h3>
+                <a class="contacts__link" href="#">ежедневно 9:00 - 19:00</a>
+              </div>
+            </li>
+          </ul>
+          <div class="footer__buttons">
+            <a class="footer__buttons-item" href=""
+              >Политика конфиденциальности</a
+            >
+            <a class="footer__buttons-item" href=""
+              >Пользовательское соглашение</a
+            >
+          </div>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/Facebook.png"
+                alt="Facebook"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/VK.png"
+                alt="VK"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/youtube.png"
+                alt="YouTube"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/instagram.png"
+                alt="instagram"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/ok.png"
+                alt="OK"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__map" id="map">
+          <div class="footer__map-wrapper">
+            <iframe
+              src="https://yandex.by/map-widget/v1/org/voroshilovskiy/1597989815/?ll=44.503521%2C48.700517&z=15.8"
+              width="100%"
+              height="100%"
+              style="
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                border: none;
+              "
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-wrapper">
+            <div class="footer__bottom-content">
+              © 2005-2022. Интернет магазин фабрики дверей «Дверь.рф». Входные и
+              <a class="footer__bottom-link" href="#"
+                >межкомнатные двери от производителя</a
+              >.Материалы сайта защищены законом РФ об авторских и смежных
+              правах. Копирование запрещено.
+              <a class="footer__bottom-link" href="#"
+                >Сайт не является договором оферты</a
+              >
+            </div>
+            <div class="footer__logo logo">
+              <a class="logo__link" href="/">
+                <img
+                  class="logo__img"
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
