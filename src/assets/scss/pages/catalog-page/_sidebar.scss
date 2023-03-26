@@ -1,0 +1,106 @@
+.sidebar {
+  $sidebar: &;
+
+  background-color: #fff;
+
+  @media (max-width: 1000px) {
+    position: absolute;
+    left: -200%;
+    top: -225px;
+    width: calc(100% + 40px);
+    padding: 0 20px;
+    height: 100%;
+    z-index: 4;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+
+    &.active {
+      left: -20px;
+    }
+  }
+
+  &__back{
+    display: flex;
+    gap: 6px;
+    padding: 27px 0 17px;
+
+    &-button{
+      width: 20px;
+      height: 20px;
+    }
+
+    span{
+      @include text(16px, 400, 24px, $secondaryColor);
+    }
+  }
+
+  &__menu {
+    padding: 16px;
+    background-color: #f4f4f5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    #{$sidebar}__menu-link {
+      display: block;
+      padding: 6px 8px;
+      @include text(16px, 400, 24px, $secondaryColor);
+      &:hover {
+        background-color: $secondaryColor;
+        color: #fff;
+      }
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+    }
+  }
+
+  &__options {
+    margin-top: 23px;
+    outline: 1px solid #eaebed;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    #{$sidebar}__option {
+      padding: 12px 24px;
+      border-bottom: 1px solid #eaebed;
+
+      #{$sidebar}__title {
+        @include text(18px, 600, 28px, $secondaryColor);
+        margin-bottom: 12px;
+      }
+
+      .check__list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+
+    #{$sidebar}__buttons {
+      padding: 16px 24px;
+      display: flex;
+      gap: 13px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

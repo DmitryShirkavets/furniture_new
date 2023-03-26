@@ -14,6 +14,11 @@
     padding-top: 20px;
   }
 
+  .card{
+    max-width: 282px;
+    min-width: 282px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -60,4 +65,15 @@
 
 .input__doors-prev{
   left: 12px;
+}
+
+.input-doors{
+  .card{
+    min-width: 376px;
+    max-width: 376px;
+
+    @media (max-width: 800px) {
+      min-width: unset;
+    }
+  }
 }

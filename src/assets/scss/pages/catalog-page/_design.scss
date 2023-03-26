@@ -1,0 +1,13 @@
+.design{
+    $design: &;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+
+        #{$design}__link{
+            padding: 0;
+        }
+    }
+}

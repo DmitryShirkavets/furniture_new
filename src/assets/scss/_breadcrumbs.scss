@@ -1,0 +1,47 @@
+.breadcrumbs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  $breadcrumbs: &;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 4px;
+      height: 8px;
+      display: block;
+      background-size: 4px 8px;
+      background-image: url("./../images/breadcrumb-arrow.svg");
+      position: absolute;
+      right: -11px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+
+    #{$breadcrumbs}__link {
+      @include text(14px, 400, 18px, #7e8290);
+    }
+
+    &.active {
+      &::after {
+        display: none;
+      }
+
+      #{$breadcrumbs}__link {
+        color: $secondaryColor;
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+}

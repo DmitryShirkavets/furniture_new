@@ -189,6 +189,19 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
+
+
+document.querySelector('.sidebar__back-button').addEventListener("click", function () {
+  document.querySelector('.catalog__setting').classList.toggle('active');
+  document.querySelector('.sidebar').classList.toggle('active');
+})
+
+document.querySelector('.catalog__setting').addEventListener("click", function () {
+  document.querySelector('.catalog__setting').classList.toggle('active');
+  document.querySelector('.sidebar').classList.toggle('active');
+})
+
+
 // var myMap;
 
 // // Дождёмся загрузки API и готовности DOM.

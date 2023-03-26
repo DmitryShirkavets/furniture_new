@@ -1,0 +1,69 @@
+.checkbox {
+  position: relative;
+
+  &__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      outline: 1px solid #ccd4e0;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+    }
+
+    &::after {
+      content: "";
+      width: 14px;
+      height: 11px;
+      display: block;
+      background-image: url("./../images/check.svg");
+      background-size: 14px 11px;
+      z-index: 2;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      opacity: 0;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    background-color: $primaryColor;
+    outline-color: $primaryColor;
+  }
+
+  &__input:hover + &__label::before {
+    outline-color: $primaryColor;
+  }
+  &__input:checked + &__label::after {
+    opacity: 1;
+  }
+}

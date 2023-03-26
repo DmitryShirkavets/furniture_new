@@ -34,6 +34,6 @@
   &:hover {
     background-color: $secondaryColor;
     color: $mainColor;
-    border: none;
+    border: 1px solid $secondaryColor;
   }
 }
