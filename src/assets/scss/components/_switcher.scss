@@ -1,0 +1,81 @@
+.switcher {
+  position: relative;
+
+  &__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    width: 58px;
+    height: 24px;
+    background-color: #eaebed;
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: #0cb827;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      z-index: 1;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+      filter: drop-shadow(0px 2px 6px rgba(5, 68, 0, 0.4));
+    }
+
+    &::after {
+      content: "";
+      width: 11px;
+      height: 10px;
+      display: block;
+      background-image: url("./../images/check.svg");
+      background-size: 11px 10px;
+      z-index: 2;
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    left: 36px;
+    // right: 2px;
+  }
+
+  &__input:hover + &__label::before {
+    // outline-color: $primaryColor;
+  }
+  &__input:checked + &__label::after {
+    left: 41px;
+    // right: 7px;
+  }
+}

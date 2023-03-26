@@ -1,0 +1,58 @@
+.product{
+    margin-top: 25px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    outline: 1px solid #EAEBED;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    $product: &;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+        #{$product}__measure{
+            margin-bottom: 10px;
+            cursor: pointer;
+            
+            span{
+                @include text(14px, 400, 18px, $secondaryColor);
+                border-bottom: 1px dashed #BABCC3;
+                text-decoration: dashed;
+            }
+        }
+
+        #{$product}__measure-btn{
+            height: 24px;
+            padding: 6px 12px;
+            @include text(12px, 400, 12px, $secondaryColor);
+            max-width: 145px;
+            margin-left: 25px;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            @include text(14px, 400, 18px, $secondaryColor);
+            margin-bottom: 8px;
+        }
+
+        .card__options{
+            display: flex;
+            gap: 8px;
+        }
+    }
+}

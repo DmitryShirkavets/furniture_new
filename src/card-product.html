@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body class="card-product-page">
+    <div class="menu__mobile">
+      <div class="menu__mobile-wrapper">
+        <div class="menu__mobile-x">
+          <div class="hamburger-box-x">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <div class="location">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.62669 9.45334C9.77544 9.45334 10.7067 8.52209 10.7067 7.37334C10.7067 6.22458 9.77544 5.29333 8.62669 5.29333C7.47794 5.29333 6.54669 6.22458 6.54669 7.37334C6.54669 8.52209 7.47794 9.45334 8.62669 9.45334Z"
+              stroke="#F85B18"
+              stroke-width="1.5"
+            />
+            <path
+              d="M3.04007 6.16C4.35341 0.386667 12.9067 0.393334 14.2134 6.16667C14.9801 9.55333 12.8734 12.42 11.0267 14.1933C9.68674 15.4867 7.56674 15.4867 6.22007 14.1933C4.38007 12.42 2.27341 9.54667 3.04007 6.16Z"
+              stroke="#F85B18"
+              stroke-width="1.5"
+            />
+          </svg>
+
+          <div class="location__wrapper">
+            <a class="location__city" href="#">г. Волгоград</a>
+            <h4 class="location__adress">ул. Каннуникова д 6/1</h4>
+          </div>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./catalog.html">Входные двери</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./catalog.html"
+              >Межкомнатные двери</a
+            >
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Фурнитура</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Оплата</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Доставка и гарантия</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="./shop.html">О магазине</a>
+          </li>
+        </ul>
+        <div class="call">
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.813354"
+              y="0.5"
+              width="32"
+              height="32"
+              rx="16"
+              fill="#7E8290"
+            />
+            <path
+              d="M23.46 20.72C23.46 20.96 23.4067 21.2067 23.2933 21.4467C23.18 21.6867 23.0333 21.9133 22.84 22.1267C22.5133 22.4867 22.1533 22.7467 21.7467 22.9133C21.3467 23.08 20.9133 23.1667 20.4467 23.1667C19.7667 23.1667 19.04 23.0067 18.2733 22.68C17.5067 22.3533 16.74 21.9133 15.98 21.36C15.2133 20.8 14.4867 20.18 13.7933 19.4933C13.1067 18.8 12.4867 18.0733 11.9333 17.3133C11.3867 16.5533 10.9467 15.7933 10.6267 15.04C10.3067 14.28 10.1467 13.5533 10.1467 12.86C10.1467 12.4067 10.2267 11.9733 10.3867 11.5733C10.5467 11.1667 10.8 10.7933 11.1533 10.46C11.58 10.04 12.0467 9.83333 12.54 9.83333C12.7267 9.83333 12.9133 9.87333 13.08 9.95333C13.2533 10.0333 13.4067 10.1533 13.5267 10.3267L15.0733 12.5067C15.1933 12.6733 15.28 12.8267 15.34 12.9733C15.4 13.1133 15.4333 13.2533 15.4333 13.38C15.4333 13.54 15.3867 13.7 15.2933 13.8533C15.2067 14.0067 15.08 14.1667 14.92 14.3267L14.4133 14.8533C14.34 14.9267 14.3067 15.0133 14.3067 15.12C14.3067 15.1733 14.3133 15.22 14.3267 15.2733C14.3467 15.3267 14.3667 15.3667 14.38 15.4067C14.5 15.6267 14.7067 15.9133 15 16.26C15.3 16.6067 15.62 16.96 15.9667 17.3133C16.3267 17.6667 16.6733 17.9933 17.0267 18.2933C17.3733 18.5867 17.66 18.7867 17.8867 18.9067C17.92 18.92 17.96 18.94 18.0067 18.96C18.06 18.98 18.1133 18.9867 18.1733 18.9867C18.2867 18.9867 18.3733 18.9467 18.4467 18.8733L18.9533 18.3733C19.12 18.2067 19.28 18.08 19.4333 18C19.5867 17.9067 19.74 17.86 19.9067 17.86C20.0333 17.86 20.1667 17.8867 20.3133 17.9467C20.46 18.0067 20.6133 18.0933 20.78 18.2067L22.9867 19.7733C23.16 19.8933 23.28 20.0333 23.3533 20.2C23.42 20.3667 23.46 20.5333 23.46 20.72Z"
+              fill="white"
+            />
+          </svg>
+          <div class="call__wrapper">
+            <h4 class="call__subtitle">Звоните прямо сейчас:</h4>
+            <a class="call__phone" href="tel:+78442250300"
+              >+7 (844) <span>225-03-00</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="price">
+      <div class="container">
+        <div class="price__wrapper">
+          <h2 class="section__title price__section-title">Прайс на работы</h2>
+          <div class="price__title">Замер</div>
+          <div class="price__block">
+            <div class="price__row col-3">
+              <div class="price__item item_type">Замер дверей</div>
+              <div class="price__item item_text">
+                Замер, консультация, заключения договора, с пн по сб, с 9.00 до
+                18.00 (Волгоград, Волжский, Краснослободск)
+              </div>
+              <div class="price__item item_price">
+                300 руб (по акции бесплатно)
+              </div>
+            </div>
+            <div class="price__row col-3">
+              <div class="price__item">Замер в нерабочее время</div>
+              <div class="price__item">
+                Замер с 8.00 до 9.00 и с 18.00 до 20.00, кроме воскресенья
+                (Волгоград, Волжский, Краснослободск)
+              </div>
+              <div class="price__item">500 руб</div>
+            </div>
+            <div class="price__row col-3">
+              <div class="price__item">
+                Точное время замера (интервал 1 час)
+              </div>
+              <div class="price__item">Мы подвинем очередь ради вас</div>
+              <div class="price__item">+ 300 руб</div>
+            </div>
+            <div class="price__row col-3">
+              <div class="price__item">Замер в отдаленные районы</div>
+              <div class="price__item">за пределами города, область</div>
+              <div class="price__item">договорная</div>
+            </div>
+          </div>
+
+          <div class="price__title">Доставка</div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Доставка в черте города (Волгоград, Волжский)</td>
+                <td>
+                  600 руб, Красноармейский, Волжский, Городище, рп Максима
+                  Горького - 800 руб
+                </td>
+              </tr>
+              <tr>
+                <td>Доставка за пределы города (Волгоград, Волжский)</td>
+                <td>27 руб/км</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">Подъем дверей</div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Подъем межкомнатной двери по лестнице</td>
+                <td>1 этаж</td>
+                <td>50 руб</td>
+              </tr>
+              <tr>
+                <td>Подъем металлической двери по лестнице</td>
+                <td>1 этаж</td>
+                <td>100 ₽, свыше 90 кг - 200 ₽</td>
+              </tr>
+              <tr>
+                <td>Подъем межкомнатной двери на лифте</td>
+                <td>1 этаж</td>
+                <td>100₽</td>
+              </tr>
+              <tr>
+                <td>Подъем металлической двери на лифте</td>
+                <td>1 этаж</td>
+                <td>200 ₽, свыше 90 кг - 400 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">
+            Монтаж одностворчатых дверей "ПОД КЛЮЧ":
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Монтаж межкомнатной двери + врезка замка</td>
+                <td>
+                  Установка коробки, установка наличников с двух сторон, врезка
+                  простых защелок и ручки, установка стандартных петель без
+                  врезки. В свободном графике
+                </td>
+                <td>2300 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж входной двери</td>
+                <td>
+                  Установка цельного дверного блока в уровень, регулировка,
+                  пропенивание швов. В свободном графике
+                </td>
+                <td>2300 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж в определенный день/время</td>
+                <td>Любых дверей</td>
+                <td>2300 руб (при наличии времени, по согласованию)</td>
+              </tr>
+              <tr>
+                <td>*Демонтаж двери (доп.)</td>
+                <td>Снятие старого дверного блока 1шт</td>
+                <td>250 руб, сложный демонтаж старых дверей - 500 руб</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">
+            Монтаж двустворчатых дверей "ПОД КЛЮЧ":
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Монтаж межкомнатной двери + врезка замка*</td>
+                <td>
+                  Установка коробки, установка наличников с двух сторон, врезка
+                  простых защелок и ручки, установка стандартных петель без
+                  врезки.
+                </td>
+                <td>3300 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж входной двери</td>
+                <td>
+                  Установка цельного дверного блока в уровень, регулировка,
+                  пропенивание швов.
+                </td>
+                <td>3300 руб</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">Монтаж раздвижных дверей "ПОД КЛЮЧ":</div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Монтаж одностворчатой двери-купе без обрамления</td>
+                <td>2500 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж двустворчатой двери-купе без обрамления</td>
+                <td>3500 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж дверного блока типа "книжка"</td>
+                <td>4500 руб</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">Доп. работы:</div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Монтаж доборов</td>
+                <td>до 200 мм / до 400 мм / до 600 мм</td>
+                <td>600 руб / 1200 руб / 1800 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж доп комплекта доборов</td>
+                <td>состыковка доборов</td>
+                <td>600 руб</td>
+              </tr>
+              <tr>
+                <td>Монтаж капители</td>
+                <td>с одной стороны</td>
+                <td>500 руб</td>
+              </tr>
+              <tr>
+                <td>Отбитие штукатурки</td>
+                <td>1 сторона</td>
+                <td>300 руб</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="price__title">
+            Уборка/Вывоз мусора - при возможности, по согласованию с бригадой
+            монтажников:
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Уборка мусора</td>
+                <td>
+                  Собрать мусор в кучу/мусорные мешки (предоставляет заказчик)
+                </td>
+                <td>0 руб</td>
+              </tr>
+              <tr>
+                <td>Вывоз мусора</td>
+                <td>Вывоз мусора на ближайшую мусорку</td>
+                <td>300 руб</td>
+              </tr>
+              <tr>
+                <td>Вывоз крупного мусора</td>
+                <td>
+                  Вывоз крупного строительного мусора после расширений и др
+                  строительных работ
+                </td>
+                <td>500 руб</td>
+              </tr>
+              <tr>
+                <td>Вывоз старых деревянных дверей</td>
+                <td>Вывоз старых дверей после демонтажа</td>
+                <td>200 руб/шт</td>
+              </tr>
+              <tr>
+                <td>Вывоз старых металлических дверей</td>
+                <td>Вывоз старых дверей после демонтажа</td>
+                <td>300 руб/шт</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="btn--outline">Распечатать</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__top">
+            <div class="header__logo logo">
+              <a class="logo__link" href="/">
+                <img
+                  class="logo__img"
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+              <h1 class="header__title">
+                Межкомнатные, входные<br />
+                двери и фурнитура к ним
+              </h1>
+            </div>
+            <div class="header__location location">
+              <img
+                class="location__icon"
+                src="./assets/images/location.svg"
+                alt="location"
+              />
+              <div class="location__wrapper">
+                <a class="location__city" href="#">г. Волгоград</a>
+                <h4 class="location__adress">ул. Каннуникова д 6/1</h4>
+              </div>
+            </div>
+            <div class="header__call call">
+              <img
+                class="call__icon"
+                src="./assets/images/callme.svg"
+                alt="phone"
+              />
+              <div class="call__wrapper">
+                <h4 class="call__subtitle">Звоните прямо сейчас:</h4>
+                <a class="call__phone" href="tel:+78442250300"
+                  >+7 (844) <span>225-03-00</span></a
+                >
+              </div>
+            </div>
+            <div class="header__mini-menu mini-menu">
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/ranking.svg"
+                    alt="ranking"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/chart.svg"
+                    alt="chart"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+              <div class="mini-menu__item">
+                <a class="mini-menu__link" href="#">
+                  <img
+                    class="mini-menu__icon"
+                    src="./assets/images/shopping-cart.svg"
+                    alt="cart"
+                  />
+                  <span>3</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./catalog.html"
+                  >Входные двери</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./catalog.html"
+                  >Межкомнатные двери</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Фурнитура</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Оплата</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка и гарантия</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="./shop.html">О магазине</a>
+              </li>
+              <li class="menu__list-item search">
+                <input class="search__input" type="text" placeholder="Поиск" />
+                <img
+                  class="search__icon"
+                  src="./assets/images/search-normal.svg"
+                  alt="search"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="header__mobile">
+            <div class="search">
+              <input class="search__input" type="text" placeholder="Поиск" />
+              <img
+                class="search__icon"
+                src="./assets/images/search-normal.svg"
+                alt="search"
+              />
+            </div>
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <div class="menu__dropdown"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="card-product">
+      <div class="container">
+        <div class="card-product__wrapper">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="./catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="./catalog.html"
+                >Входные двери</a
+              >
+            </li>
+            <li class="breadcrumbs__item active">
+              <a class="breadcrumbs__link" href="#"
+                >Cappuccino Veralinga 205*86 Правая. Выставочный образец</a
+              >
+            </li>
+          </ul>
+          <h1 class="card-product__title section__title">
+            Cappuccino Veralinga 205*86 Правая. Выставочный образец
+          </h1>
+
+          <div class="card-product__inner">
+            <div class="card-product__left">
+              <img
+                src="./assets/images/input1.png"
+                alt=""
+                class="card-product__img"
+              />
+              <h3 class="card-product__left-subtitle">
+                Изображение может незначительно отличаться от оригинала
+              </h3>
+              <div class="card-product__left-switcher">
+                <span>Инфо</span>
+                <div class="switcher">
+                  <input
+                    class="switcher__input"
+                    type="checkbox"
+                    id="switcher"
+                  />
+                  <label class="switcher__label" for="switcher"></label>
+                </div>
+                <span>Интерьер</span>
+              </div>
+
+              <div class="card-product__left-views">
+                <img
+                  src="./assets/images/card-product1.png"
+                  alt=""
+                  class="card-product__left-views-img"
+                />
+                <img
+                  src="./assets/images/card-product1.png"
+                  alt=""
+                  class="card-product__left-views-img"
+                />
+                <img
+                  src="./assets/images/card-product1.png"
+                  alt=""
+                  class="card-product__left-views-img"
+                />
+              </div>
+            </div>
+            <div class="card-product__right">
+              <div class="card-product__right-top">
+                <h5 class="card-product__article">Артикул: 082834234</h5>
+                <div class="card-product__availability">
+                  <img
+                    src="./assets/images/success2.svg"
+                    alt="success"
+                    class="card-product__availability-img"
+                  />
+                  <span>В наличии</span>
+                </div>
+              </div>
+              <div class="card-product__product product">
+                <div class="product__top">
+                  <div class="product__block">
+                    <h3 class="product__block-title">Размер блока</h3>
+                    <select class="select" name="" id="">
+                      <option value="1">800х2050мм</option>
+                    </select>
+                  </div>
+
+                  <div class="product__block">
+                    <a class="product__measure">
+                      <img
+                        src="./assets/images/traced.svg"
+                        alt=""
+                        class="product__measure-img"
+                      />
+                      <span>Как сделать замеры?</span>
+                    </a>
+                    <button class="product__measure-btn btn--outline">
+                      Вызвать замерщика
+                    </button>
+                  </div>
+                </div>
+                <div class="product__block">
+                  <h3 class="product__block-title">Внешняя отделка</h3>
+
+                  <ul class="card__options">
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material1png.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material2.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material3.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--add-material">
+                        +15
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__block">
+                  <h3 class="product__block-title">Форма МДФ панели</h3>
+
+                  <ul class="card__options">
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material1png.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material2.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material3.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--add-material">
+                        +15
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__block">
+                  <h3 class="product__block-title">Цвет МДФ панели</h3>
+
+                  <ul class="card__options">
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material1png.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material2.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li class="card__options-item">
+                      <button class="card__options-link btn--material">
+                        <img
+                          class="card__options-img"
+                          src="./assets/images/material3.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <!-- <li class="card__options-item">
+                      <button class="card__options-link btn--add-material">
+                        +15
+                      </button>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="interior-doors">
+      <div class="container">
+        <div class="interior-doors__wrapper">
+          <div class="interior-doors__top">
+            <h2 class="section__title interior-doors__title">Похожие товары</h2>
+          </div>
+          <div class="interior__doors-content">
+            <div class="swiper input-doors__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                  <img
+                    class="card__img"
+                    src="./assets/images/input1.png"
+                    alt="interior"
+                  />
+                  <div class="card__info">
+                    <a class="card__title" href="./card-product.html">
+                      Экошпон антивандальный 5С Венге черное стекло
+                    </a>
+                    <ul class="card__options">
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--material">
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material1png.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--material">
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material2.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--material">
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material3.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--add-material">
+                          +15
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="card__bottom">
+                      <h2 class="card__price">15 500 ₽</h2>
+                      <button class="card__button btn--orange">
+                        <img
+                          class="card__button-img"
+                          src="./assets/images/shopping-cart.svg"
+                          alt="cart"
+                        />
+                        <span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <img
+                    class="card__img"
+                    src="./assets/images/input2.png"
+                    alt="interior"
+                  />
+                  <div class="card__info">
+                    <a class="card__title" href="./card-product.html">
+                      Экошпон антивандальный 5С Венге черное стекло
+                    </a>
+                    <ul class="card__options">
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material1png.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material2.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material3.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--add-material">
+                          +15
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="card__bottom">
+                      <h2 class="card__price">15 500 ₽</h2>
+                      <button class="card__button btn--orange">
+                        <img
+                          class="card__button-img"
+                          src="./assets/images/shopping-cart.svg"
+                          alt="cart"
+                        />
+                        <span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <img
+                    class="card__img"
+                    src="./assets/images/input3.png"
+                    alt="interior"
+                  />
+                  <div class="card__info">
+                    <a class="card__title" href="./card-product.html">
+                      Экошпон антивандальный 5С Венге черное стекло
+                    </a>
+                    <ul class="card__options">
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material1png.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material2.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material3.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--add-material">
+                          +15
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="card__bottom">
+                      <h2 class="card__price">15 500 ₽</h2>
+                      <button class="card__button btn--orange">
+                        <img
+                          class="card__button-img"
+                          src="./assets/images/shopping-cart.svg"
+                          alt="cart"
+                        />
+                        <span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+                  <img
+                    class="card__img"
+                    src="./assets/images/input1.png"
+                    alt="interior"
+                  />
+                  <div class="card__info">
+                    <a class="card__title" href="./card-product.html">
+                      Экошпон антивандальный 5С Венге черное стекло
+                    </a>
+                    <ul class="card__options">
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material1png.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material2.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button
+                          class="card__options-link btn--material"
+                          href="#"
+                        >
+                          <img
+                            class="card__options-img"
+                            src="./assets/images/material3.png"
+                            alt=""
+                          />
+                        </button>
+                      </li>
+                      <li class="card__options-item">
+                        <button class="card__options-link btn--add-material">
+                          +15
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="card__bottom">
+                      <h2 class="card__price">15 500 ₽</h2>
+                      <button class="card__button btn--orange">
+                        <img
+                          class="card__button-img"
+                          src="./assets/images/shopping-cart.svg"
+                          alt="cart"
+                        />
+                        <span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next input__doors-next"></div>
+          <div class="swiper-button-prev input__doors-prev"></div>
+        </div>
+        <div class="filter filter--prices">
+          <ul class="filter--prices__list">
+            <li class="filter--prices__item">
+              <button class="filter--prices__button btn--filter">
+                до 10 000 ₽
+              </button>
+            </li>
+            <li class="filter--prices__item">
+              <button class="filter--prices__button btn--filter">
+                от 10 000 до 20 000 ₽
+              </button>
+            </li>
+            <li class="filter--prices__item">
+              <button class="filter--prices__button btn--filter">
+                от 20 000 ₽
+              </button>
+            </li>
+            <li class="filter--prices__item">
+              <button class="filter--prices__button btn--orange max">
+                Перейти в каталог
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__wrapper">
+          <h2 class="section__title gallery__title">Фото магазина</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery1.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery3.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery4.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery2.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__item-img"
+                src="./assets/images/gallery5.png"
+                alt=""
+              />
+            </li>
+          </ul>
+
+          <div class="swiper gallery__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery1.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery3.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery4.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery__item-img"
+                  src="./assets/images/gallery5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination gallery__pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img
+                class="advantages__icon"
+                src="./assets/images/advantages1.svg"
+                alt=""
+              />
+              <h2 class="advantages__title">Доставка и установка</h2>
+              <p class="advantages__text">
+                Доставка, подъём и установка двери осуществляется нашими
+                специалистами.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img
+                class="advantages__icon"
+                src="./assets/images/advantages2.svg"
+                alt=""
+              />
+              <h2 class="advantages__title">Гарантия</h2>
+              <p class="advantages__text">
+                Гарантия составляет 18 месяцев с момента покупки.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img
+                class="advantages__icon"
+                src="./assets/images/advantages3.svg"
+                alt=""
+              />
+              <h2 class="advantages__title">Как купить?</h2>
+              <p class="advantages__text">
+                Приобрести понравившуюся вам дверь, можно приехав в наш магазин,
+                либо позвонив и вызвав замерщика для снятия замеров и оформления
+                заказа.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <img
+                class="advantages__icon"
+                src="./assets/images/advantages4.svg"
+                alt=""
+              />
+              <h2 class="advantages__title">Оплата</h2>
+              <p class="advantages__text">
+                Оплата возможна наличными и картой. Для юридических лиц возможна
+                также оплата по безналичному расчету.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="invite">
+      <div class="container">
+        <div class="invite__wrapper">
+          <img
+            class="invite__image"
+            src="./assets/images/invite.png"
+            alt="invite"
+          />
+          <div class="invite__content">
+            <h2 class="invite__title">Пригласите специалиста на замер!</h2>
+            <h3 class="invite__subtitle">
+              Замер и консультации <span>бесплатно.</span>
+            </h3>
+            <form class="invite__form form" action="">
+              <h2 class="form__title">Заполните форму</h2>
+              <div class="form__content">
+                <div class="form__wrapper-input">
+                  <label class="form__label" for="name"
+                    >Напишите свое имя</label
+                  >
+                  <input class="form__input" id="name" type="text" />
+                </div>
+
+                <div class="form__wrapper-input">
+                  <label class="form__label" for="phone"
+                    >Контактный телефон</label
+                  >
+                  <input class="form__input" id="phone" type="text" />
+                </div>
+
+                <div class="form__wrapper-check">
+                  <input type="checkbox" id="check" />
+                  <label class="form__label" for="check"
+                    >Нажимая на кнопку, вы даете согласие на обработку
+                    персональных данных и соглашаетесь c политикой
+                    конфиденциальности</label
+                  >
+                </div>
+                <button class="form__button btn--orange">
+                  Связаться со мной
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__wrapper">
+          <h2 class="section__title reviews__title">
+            Отзывы о нас
+            <div class="swiper-button-next reviews__button-next"></div>
+            <div class="swiper-button-prev reviews__button-prev"></div>
+          </h2>
+
+          <div class="swiper reviews__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="reviews__img"
+                  src="./assets/images/reviews1.png"
+                  alt=""
+                />
+                <div class="reviews__content">
+                  <div class="reviews__stars"></div>
+                  <h2 class="reviews__content-title">Максим Александрович</h2>
+                  <p class="reviews__text">
+                    Хороший магазин, большой выбор, приветливые сотрудники.
+                    Покупали двери в новую квартиру в ЖК "Бейкер стрит".
+                    Качеством остались очень довольны. Хочется выразить
+                    благодарность менеджеру Сергею за помощь в выборе дверей и
+                    фурнитуры, а также за детальный рассказ об особенностях
+                    монтажа.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="reviews__img"
+                  src="./assets/images/reviews2.png"
+                  alt=""
+                />
+                <div class="reviews__content">
+                  <div class="reviews__stars"></div>
+                  <h2 class="reviews__content-title">Ирина</h2>
+                  <p class="reviews__text">
+                    Рекомендую данный магазин! Искала подходящие по дизайну
+                    двери в новую квартиру, благодаря большому выбору наконец
+                    нашла. Менеджер проконсультировал по всем моим вопросам.
+                    Заказывала доставку с установкой, все привезли, сделали
+                    быстро и качественно!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="reviews__img"
+                  src="./assets/images/reviews1.png"
+                  alt=""
+                />
+                <div class="reviews__content">
+                  <div class="reviews__stars"></div>
+                  <h2 class="reviews__content-title">Николай Петрович</h2>
+                  <p class="reviews__text">
+                    Хочу сказать спасибо за профессионализм и отличную работу
+                    продавцов-консультантов и отдельное спасибо ребятам
+                    монтажникам за качественную установку пяти дверей в моей
+                    квартире. Все было сделано в срок и с отличным качеством.
+                    Поставили двери, отрегулировали замки, вывезли старые двери.
+                    Спасибо!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="reviews__img"
+                  src="./assets/images/reviews2.png"
+                  alt=""
+                />
+                <div class="reviews__content">
+                  <div class="reviews__stars"></div>
+                  <h2 class="reviews__content-title">Ирина</h2>
+                  <p class="reviews__text">
+                    Рекомендую данный магазин! Искала подходящие по дизайну
+                    двери в новую квартиру, благодаря большому выбору наконец
+                    нашла. Менеджер проконсультировал по всем моим вопросам.
+                    Заказывала доставку с установкой, все привезли, сделали
+                    быстро и качественно!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="reviews__img"
+                  src="./assets/images/reviews2.png"
+                  alt=""
+                />
+                <div class="reviews__content">
+                  <div class="reviews__stars"></div>
+                  <h2 class="reviews__content-title">Ирина</h2>
+                  <p class="reviews__text">
+                    Рекомендую данный магазин! Искала подходящие по дизайну
+                    двери в новую квартиру, благодаря большому выбору наконец
+                    нашла. Менеджер проконсультировал по всем моим вопросам.
+                    Заказывала доставку с установкой, все привезли, сделали
+                    быстро и качественно!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="brands">
+          <div class="container">
+            <div class="brands__wrapper">
+              <h2 class="section__title brands__title">Популярные бренды</h2>
+    
+              <div class="brands__swiper-wrapper">
+                <div class="swiper brands__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                    <div class="swiper-slide">Logo</div>
+                  </div>
+                </div>
+                <div class="swiper-button-next brands__button-next"></div>
+                <div class="swiper-button-prev brands__button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__content">
+          <h2 class="footer__title">Как с нами связаться</h2>
+          <ul class="footer__contacts contacts">
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts1.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Звоните прямо сейчас:</h3>
+                <a class="contacts__link" href="tel:+78442250300"
+                  >+7 (844) <span>225-03-00</span></a
+                >
+              </div>
+            </li>
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts2.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Адрес:</h3>
+                <a class="contacts__link" href="#"
+                  >Волгоград, ул. Канунникова 6/1</a
+                >
+              </div>
+            </li>
+            <li class="contacts__item">
+              <img
+                class="contacts__icon"
+                src="./assets/images/contacts3.svg"
+                alt=""
+              />
+              <div class="contacts__info">
+                <h3 class="contacts__subtitle">Режим работы:</h3>
+                <a class="contacts__link" href="#">ежедневно 9:00 - 19:00</a>
+              </div>
+            </li>
+          </ul>
+          <div class="footer__buttons">
+            <a class="footer__buttons-item" href=""
+              >Политика конфиденциальности</a
+            >
+            <a class="footer__buttons-item" href=""
+              >Пользовательское соглашение</a
+            >
+          </div>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/Facebook.png"
+                alt="Facebook"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/VK.png"
+                alt="VK"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/youtube.png"
+                alt="YouTube"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/instagram.png"
+                alt="instagram"
+              />
+            </li>
+            <li class="socials__item">
+              <img
+                class="socials__icon"
+                src="./assets/images/ok.png"
+                alt="OK"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__map" id="map">
+          <div class="footer__map-wrapper">
+            <iframe
+              src="https://yandex.by/map-widget/v1/org/voroshilovskiy/1597989815/?ll=44.503521%2C48.700517&z=15.8"
+              width="100%"
+              height="100%"
+              style="
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                border: none;
+              "
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-wrapper">
+            <div class="footer__bottom-content">
+              © 2005-2022. Интернет магазин фабрики дверей «Дверь.рф». Входные и
+              <a class="footer__bottom-link" href="#"
+                >межкомнатные двери от производителя</a
+              >.Материалы сайта защищены законом РФ об авторских и смежных
+              правах. Копирование запрещено.
+              <a class="footer__bottom-link" href="#"
+                >Сайт не является договором оферты</a
+              >
+            </div>
+            <div class="footer__logo logo">
+              <a class="logo__link" href="/">
+                <img
+                  class="logo__img"
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

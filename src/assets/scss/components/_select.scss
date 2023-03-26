@@ -1,0 +1,9 @@
+.select{
+    height: 40px;
+    padding: 8px 28px 8px 16px;
+    width: 100%;
+
+    option{
+        @include text(14px, 400, 24px, $secondaryColor);
+    }
+}
