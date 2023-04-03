@@ -17,6 +17,12 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
         #{$product}__measure{
             margin-bottom: 10px;
             cursor: pointer;
@@ -41,9 +47,88 @@
         }
     }
 
+    &__right-bottom{
+        margin-top: 55px;
+        display: flex;
+        padding-left: 28px;
+        gap: 43px;
+        align-items: flex-start;
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 0;
+            align-items: center;
+        }
+
+        &-call{
+            @media (max-width: 800px) {
+            display: flex;
+            align-items: center;
+            }
+        }
+
+        &-buttons{
+            display: flex;
+            justify-content: space-between;
+            gap: 27px;
+
+            @media (max-width: 800px) {
+                justify-content: center;
+            }
+
+            #{$product}__postpone{
+                display: flex;
+                gap: 4px;
+                align-items:center;
+                @include text(14px, 400, 18px, $secondaryColor);
+                padding: 0;
+            }
+
+            #{$product}__compare{
+                display: flex;
+                gap: 4px;
+                align-items:center;
+                @include text(14px, 400, 18px, $secondaryColor);
+                padding: 0;
+            }
+        }
+
+    }
+
     &__block{
         display: flex;
         flex-direction: column;
+
+        &-wrapper{
+            display: flex;
+            gap: 21px;
+
+            @media (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .price__drop{
+                @include text(14px, 400, 18px, $secondaryColor);
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 800px) {
+                    display: flex;
+                    justify-content: center;
+
+                    br{
+                        display: none;
+                    }
+
+                    gap: 12px;
+                }
+            }
+        }
 
         &-title{
             @include text(14px, 400, 18px, $secondaryColor);
@@ -55,4 +140,23 @@
             gap: 8px;
         }
     }
+
+    &__buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        button{
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+    }
+    
 }

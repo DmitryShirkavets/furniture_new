@@ -7,6 +7,17 @@
     padding: 40px 0;
   }
 
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -64,6 +75,17 @@
           margin-top: 4px;
         }
       }
+    }
+  }
+}
+
+.card-product-page{
+  .advantages{
+    padding-top: 0;
+    padding-bottom: 57px;
+
+    @media (max-width: 800px) {
+      display: none;
     }
   }
 }

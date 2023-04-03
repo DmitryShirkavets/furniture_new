@@ -1,0 +1,91 @@
+.price-block {
+  $price-block: &;
+  padding: 16px 24px;
+  outline: 1px solid #eaebed;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &.gray {
+    background-color: #f4f4f5;
+
+    #{$price-block}__new-price{
+        color: $primaryColor;
+    }
+  }
+
+  &__old-price {
+    text-decoration-line: line-through;
+    @include text(14px, 400, 18px, #7e8290);
+    white-space: nowrap;
+  }
+
+  &__new-price {
+    @include text(26px, 600, 18px, $secondaryColor);
+    white-space: nowrap;
+  }
+
+  &__service {
+    @include text(14px, 400, 18px, $secondaryColor);
+    white-space: nowrap;
+  }
+
+  &__discount {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: conic-gradient(
+        from 180deg at 50% 50%,
+        #f60000 -0.21deg,
+        #f6ec00 10.61deg,
+        #f60000 23.01deg,
+        #f6ec00 33.31deg,
+        #f60000 45.15deg,
+        #f6ec00 57deg,
+        #f60000 67.7deg,
+        #f6ec00 77.47deg,
+        #f60000 90.42deg,
+        #f6ec00 102.22deg,
+        #f60000 114.54deg,
+        #f6ec00 124.57deg,
+        #f60000 135.15deg,
+        #f6ec00 145.29deg,
+        #f60000 157.17deg,
+        #f6ec00 168.34deg,
+        #f60000 180.07deg,
+        #f6ec00 190.95deg,
+        #f60000 203.3deg,
+        #f6ec00 213.71deg,
+        #f60000 226.07deg,
+        #f6ec00 237.6deg,
+        #f60000 249.18deg,
+        #f6ec00 260.01deg,
+        #f60000 270.82deg,
+        #f6ec00 281.19deg,
+        #f60000 293.38deg,
+        #f6ec00 303.81deg,
+        #f60000 316.14deg,
+        #f6ec00 326.83deg,
+        #f60000 337.31deg,
+        #f6ec00 350.28deg,
+        #f60000 359.79deg,
+        #f6ec00 370.61deg
+      ),
+      radial-gradient(50% 50% at 50% 50%, #ee0000 48.77%, #ee5600 100%);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 25px;
+    width: 47px;
+    height: 47px;
+    padding: 14px 6px;
+    @include text(14px, 400, 18px, $mainColor);
+  }
+}

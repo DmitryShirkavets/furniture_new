@@ -11,11 +11,21 @@
     flex-direction: column;
     gap: 3px;
 
+    &.card-product{
+      gap: 6px;
+      padding: 0;
+    }
+
     #{$call}__subtitle {
       color: $lightColor;
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;
+
+      &.card-product{
+        @include text(14px, 400, 18px, #7E8290);
+        padding: 0;
+      }
     }
 
     #{$call}__phone {
@@ -28,6 +38,13 @@
       span {
         font-weight: 600;
       }
+    }
+
+    #{$call}__button{
+      @include text(14px, 400, 18px, $secondaryColor);
+      text-decoration-line: underline;
+      padding: 0;
+      text-align: start;
     }
   }
 }
