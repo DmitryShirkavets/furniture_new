@@ -110,45 +110,46 @@
     </div>
 
     <div class="price">
+      <button class="price__button-close btn--outline" onclick="priceHidden()"><img src="./assets/images/xmark-solid.svg" alt=""></button>
       <div class="container">
         <div class="price__wrapper">
           <h2 class="section__title price__section-title">Прайс на работы</h2>
           <div class="price__title">Замер</div>
-          <div class="price__block">
-            <div class="price__row col-3">
-              <div class="price__item item_type">Замер дверей</div>
-              <div class="price__item item_text">
+          <table class="table-rows">
+            <tr>
+              <td>Замер дверей</td>
+              <td>
                 Замер, консультация, заключения договора, с пн по сб, с 9.00 до
                 18.00 (Волгоград, Волжский, Краснослободск)
-              </div>
-              <div class="price__item item_price">
-                300 руб (по акции бесплатно)
-              </div>
-            </div>
-            <div class="price__row col-3">
-              <div class="price__item">Замер в нерабочее время</div>
-              <div class="price__item">
+              </td>
+              <td>
+                300 руб <span>(по акции бесплатно)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Замер в нерабочее время</td>
+              <td>
                 Замер с 8.00 до 9.00 и с 18.00 до 20.00, кроме воскресенья
                 (Волгоград, Волжский, Краснослободск)
-              </div>
-              <div class="price__item">500 руб</div>
-            </div>
-            <div class="price__row col-3">
-              <div class="price__item">
+              </td>
+              <td>500 руб</td>
+            </tr>
+            <tr>
+              <td>
                 Точное время замера (интервал 1 час)
-              </div>
-              <div class="price__item">Мы подвинем очередь ради вас</div>
-              <div class="price__item">+ 300 руб</div>
-            </div>
-            <div class="price__row col-3">
-              <div class="price__item">Замер в отдаленные районы</div>
-              <div class="price__item">за пределами города, область</div>
-              <div class="price__item">договорная</div>
-            </div>
-          </div>
+              </td>
+              <td>Мы подвинем очередь ради вас</td>
+              <td>+ 300 руб</td>
+            </tr>
+            <tr>
+              <td>Замер в отдаленные районы</td>
+              <td>за пределами города, область</td>
+              <td>договорная</td>
+            </tr>
+          </table>
 
           <div class="price__title">Доставка</div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Доставка в черте города (Волгоград, Волжский)</td>
@@ -165,7 +166,7 @@
           </table>
 
           <div class="price__title">Подъем дверей</div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Подъем межкомнатной двери по лестнице</td>
@@ -193,7 +194,7 @@
           <div class="price__title">
             Монтаж одностворчатых дверей "ПОД КЛЮЧ":
           </div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Монтаж межкомнатной двери + врезка замка</td>
@@ -228,7 +229,7 @@
           <div class="price__title">
             Монтаж двустворчатых дверей "ПОД КЛЮЧ":
           </div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Монтаж межкомнатной двери + врезка замка*</td>
@@ -251,7 +252,7 @@
           </table>
 
           <div class="price__title">Монтаж раздвижных дверей "ПОД КЛЮЧ":</div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Монтаж одностворчатой двери-купе без обрамления</td>
@@ -269,7 +270,7 @@
           </table>
 
           <div class="price__title">Доп. работы:</div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Монтаж доборов</td>
@@ -298,7 +299,7 @@
             Уборка/Вывоз мусора - при возможности, по согласованию с бригадой
             монтажников:
           </div>
-          <table>
+          <table class="table-rows">
             <tbody>
               <tr>
                 <td>Уборка мусора</td>
@@ -333,7 +334,7 @@
             </tbody>
           </table>
 
-          <button class="btn--outline">Распечатать</button>
+          <button class="price__button btn--outline">Распечатать</button>
         </div>
       </div>
     </div>
@@ -416,8 +417,8 @@
           <div class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="./catalog.html"
-                  >Входные двери</a
+                <a class="menu__list-link" href="./catalog.html">
+                  Входные двери</a
                 >
               </li>
               <li class="menu__list-item">
@@ -426,7 +427,146 @@
                 >
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Фурнитура</a>
+                <a class="menu__list-link" href="#">Фурнитура </a>
+                <div class="menu__dropdown dropdown">
+                  <div class="dropdown__section">
+                    <h3 class="dropdown__section-title">Дверные ручки</h3>
+
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item">
+                        <a class="dropdown__list-link" href="#">
+                          <img
+                            class="dropdown__list-img"
+                            src="./assets/images/menu1.svg"
+                            alt=""
+                          />
+                          <span>Ручки на розетке</span>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a class="dropdown__list-link" href="#">
+                          <img
+                            class="dropdown__list-img"
+                            src="./assets/images/menu3.svg"
+                            alt=""
+                          />
+                          <span>Ручки-скобы</span>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a class="dropdown__list-link" href="#">
+                          <img
+                            class="dropdown__list-img"
+                            src="./assets/images/menu2.svg"
+                            alt=""
+                          />
+                          <span>Ручки на планке</span>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a class="dropdown__list-link" href="#">
+                          <img
+                            class="dropdown__list-img"
+                            src="./assets/images/menu4.svg"
+                            alt=""
+                          />
+                          <span>Ручки-гонги</span>
+                        </a>
+                      </li>
+                      <li class="dropdown__list-item">
+                        <a class="dropdown__list-link" href="#">
+                          <img
+                            class="dropdown__list-img"
+                            src="./assets/images/menu5.svg"
+                            alt=""
+                          />
+                          <span>Ручки-кнобы</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__section">
+                    <h3 class="dropdown__section-title">
+                      Выгодное предложение
+                    </h3>
+
+                    <div class="dropdown__cards">
+                      <div class="card">
+                        <img
+                          class="card__img"
+                          src="./assets/images/dropdown1.png"
+                          alt="interior"
+                        />
+                        <div class="card__info">
+                          <a class="card__title" href="#">
+                            Ручка фалевая ACANTO S.COLD (20G)
+                          </a>
+                          <div class="card__bottom">
+                            <h2 class="card__price">5 391 ₽</h2>
+                            <button class="card__button btn--orange">
+                              <img
+                                class="card__button-img"
+                                src="./assets/images/shopping-cart.svg"
+                                alt="cart"
+                              />
+                              <span>В корзину</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img
+                          class="card__img"
+                          src="./assets/images/dropdown2.png"
+                          alt="interior"
+                        />
+                        <div class="card__info">
+                          <a class="card__title" href="#">
+                            Ручки на планке Apecs HP-55.0623-CR (HP-55.23-CR)
+                          </a>
+                          <div class="card__bottom">
+                            <h2 class="card__price">5 391 ₽</h2>
+                            <button class="card__button btn--orange">
+                              <img
+                                class="card__button-img"
+                                src="./assets/images/shopping-cart.svg"
+                                alt="cart"
+                              />
+                              <span>В корзину</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img
+                          class="card__img"
+                          src="./assets/images/dropdown3.png"
+                          alt="interior"
+                        />
+                        <div class="card__info">
+                          <a class="card__title" href="#">
+                            Ручка фалевая ACANTO S.COLD (20G)
+                          </a>
+                          <div class="card__bottom">
+                            <h2 class="card__price">5 391 ₽</h2>
+                            <button class="card__button btn--orange">
+                              <img
+                                class="card__button-img"
+                                src="./assets/images/shopping-cart.svg"
+                                alt="cart"
+                              />
+                              <span>В корзину</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="dropdown__show-button btn--outline">
+                        Показать все
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Оплата</a>
@@ -460,7 +600,6 @@
               <div class="hamburger-inner"></div>
             </div>
           </div>
-          <div class="menu__dropdown"></div>
         </div>
       </div>
     </header>
@@ -807,7 +946,7 @@
                     </a>
                     <ul class="card__options">
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material1png.png"
@@ -816,7 +955,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material2.png"
@@ -825,7 +964,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material3.png"
@@ -834,7 +973,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material" onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -866,6 +1005,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -878,6 +1018,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -890,6 +1031,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -900,7 +1042,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material" onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -932,6 +1074,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -944,6 +1087,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -956,6 +1100,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -966,7 +1111,8 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material"
+                        onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -998,6 +1144,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1010,6 +1157,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1022,6 +1170,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1059,6 +1208,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1071,6 +1221,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1083,6 +1234,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1093,7 +1245,8 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material"
+                        onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -1136,7 +1289,8 @@
                     </a>
                     <ul class="card__options">
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material"
+                        onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material1png.png"
@@ -1145,7 +1299,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material2.png"
@@ -1154,7 +1308,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material3.png"
@@ -1163,7 +1317,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material" onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -1196,6 +1350,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1208,6 +1363,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1220,6 +1376,7 @@
                       <li class="card__options-item">
                         <button
                           class="card__options-link btn--material"
+                          onclick="check(this)"
                           href="#"
                         >
                           <img
@@ -1230,7 +1387,8 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material"
+                        onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -1273,7 +1431,8 @@
                     </a>
                     <ul class="card__options">
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material"
+                        onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material1png.png"
@@ -1282,7 +1441,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material2.png"
@@ -1291,7 +1450,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--material">
+                        <button class="card__options-link btn--material" onclick="check(this)">
                           <img
                             class="card__options-img"
                             src="./assets/images/material3.png"
@@ -1300,7 +1459,7 @@
                         </button>
                       </li>
                       <li class="card__options-item">
-                        <button class="card__options-link btn--add-material">
+                        <button class="card__options-link btn--add-material" onclick="check(this)">
                           +15
                         </button>
                       </li>
@@ -2492,7 +2651,7 @@
               установки дверей и все необходимые инструменты. Ниже приведены
               цены на услуги по доставке и установке дверей.
             </p>
-            <button class="publicity__button btn--orange" onclick="">
+            <button class="publicity__button btn--orange" onclick="priceShow()">
               Прайс-лист
             </button>
           </div>

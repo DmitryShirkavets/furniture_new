@@ -57,7 +57,9 @@
             <a class="menu__list-link" href="./catalog.html">Входные двери</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="./catalog.html">Межкомнатные двери</a>
+            <a class="menu__list-link" href="./catalog.html"
+              >Межкомнатные двери</a
+            >
           </li>
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">Фурнитура</a>
@@ -181,10 +183,14 @@
           <div class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="./catalog.html">Входные двери</a>
+                <a class="menu__list-link" href="./catalog.html"
+                  >Входные двери</a
+                >
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="./catalog.html">Межкомнатные двери</a>
+                <a class="menu__list-link" href="./catalog.html"
+                  >Межкомнатные двери</a
+                >
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Фурнитура</a>
@@ -244,8 +250,10 @@
           <div class="catalog__inner">
             <div class="catalog__sidebar sidebar">
               <div class="sidebar__back">
-                <button class="sidebar__back-button">&lt;</button>
-                <span>Фильтр</span>
+                <button class="sidebar__back-button" onclick="settingsHidden()">
+                  <img src="./assets/images/arrow-left.svg" alt="" />
+                  Фильтр
+                </button>
               </div>
               <ul class="sidebar__menu">
                 <li class="sidebar__menu-item">
@@ -293,7 +301,7 @@
                   <h3 class="sidebar__title">Дизайн</h3>
                   <ul class="design__list">
                     <li class="design__item">
-                      <button class="design__link">
+                      <button class="design__link" onclick="check(this)">
                         <img
                           src="./assets/images/design1.png"
                           alt=""
@@ -742,8 +750,12 @@
                     </li>
                   </ul>
                 </div>
-                <button class="catalog__setting">
-                  <img src="./assets/images/setting.svg" alt="setting" class="catalog__setting-img">
+                <button class="catalog__setting" onclick="settingsShow()">
+                  <img
+                    src="./assets/images/setting.svg"
+                    alt="setting"
+                    class="catalog__setting-img"
+                  />
                 </button>
               </div>
               <div class="catalog__content-bottom">
