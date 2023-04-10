@@ -14,6 +14,7 @@
     #{$reviews}__button-prev {
       width: 36px;
       height: 36px;
+      padding: 0;
       right: 0;
 
       @media (max-width: 800px) {
@@ -22,7 +23,7 @@
 
       &::after {
         position: absolute;
-        left: 56%;
+        left: 50%;
         right: unset;
         top: 50%;
         transform: translate(-50%, -50%);

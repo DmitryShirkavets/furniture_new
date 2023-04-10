@@ -80,7 +80,7 @@
   .swiper-pagination#{$gallery}__pagination {
     display: none;
     @media (max-width: 800px) {
-      display: block;
+      display: flex;
     }
     bottom: -36px;
   }

@@ -36,6 +36,7 @@ button {
 @import "./components/logo";
 
 @import "./menu/menu";
+@import "./components/dropdown";
 @import "./components/search";
 
 @import "./components/hamburger";
@@ -134,5 +135,13 @@ body {
 
   &:hover {
     color: $secondaryColor;
+  }
+}
+
+video {
+  margin-top: 48px;
+
+  @media (max-width: 1200px) {
+    margin-top: 21px;
   }
 }

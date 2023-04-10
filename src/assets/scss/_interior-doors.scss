@@ -41,30 +41,55 @@
   }
 
   &__next {
-    right: 16px;
-    width: 32px;
-    height: 32px;
+    right: -32px;
+    width: 64px;
+    height: 64px;
+
+    @media (max-width: 800px) {
+      width: 32px;
+      height: 32px;
+      right: 0;
+    }
   }
 
   &__prev {
-    left: 16px;
-    width: 32px;
-    height: 32px;
+    left: -32px;
+    width: 64px;
+    height: 64px;
+
+    @media (max-width: 800px) {
+      width: 32px;
+      height: 32px;
+      left: 0;
+    }
   }
 }
 
 .input__doors-next,
 .input__doors-prev {
-  height: 42px;
-  width: 42px;
+  height: 64px;
+  width: 64px;
+
+  @media (max-width: 800px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .input__doors-next {
-  right: 12px;
+  right: -32px;
+
+  @media (max-width: 800px) {
+    right: 0px;
+  }
 }
 
 .input__doors-prev{
-  left: 12px;
+  left: -32px;
+
+  @media (max-width: 800px) {
+    left: 0px;
+  }
 }
 
 .input-doors{

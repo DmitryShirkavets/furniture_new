@@ -10,6 +10,14 @@
   &__list {
     display: flex;
 
+    &-item{
+      &:hover{
+        .dropdown{
+          display: grid;
+        }
+      }
+    }
+
     #{$menu}__list-item:first-child #{$menu}__list-link {
       border-radius: 8px 0 0 8px;
       -webkit-border-radius: 8px 0 0 8px;
@@ -34,24 +42,9 @@
     }
   }
 
-  &__dropdown {
-    display: none;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: $mainColor;
-    padding: 30px 20px 20px;
-    box-shadow: 0px 4px 9px rgba(79, 89, 132, 0.12);
-    border-radius: 0px 0px 20px 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    -moz-border-radius: 0px 0px 20px 20px;
-    -ms-border-radius: 0px 0px 20px 20px;
-    -o-border-radius: 0px 0px 20px 20px;
-
-    &.active {
-      display: block;
-    }
-  }
+  // &__dropdown {
+    
+  // }
 
   &__mobile {
     position: fixed;
@@ -102,6 +95,7 @@
         &-link{
           padding: 10px 22px;
           color: $mainColor;
+          min-width: max-content;
         }
       }
 

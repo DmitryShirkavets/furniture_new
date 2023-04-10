@@ -2,9 +2,36 @@ function test(a, b) {
     return a + b
 }
 
-// document.querySelector('.menu__list-link').addEventListener('mouseover', function(){
-//   document.querySelector('.menu__dropdown').classList.toggle('active')
-// })
+function settingsShow() {
+  document.querySelector("body").style.overflow = "hidden";
+  document.querySelector(".sidebar__back").classList.toggle("active");
+  document.querySelector(".sidebar").classList.toggle("active");
+}
+
+function settingsHidden() {
+  document.querySelector("body").style.overflow = "visible";
+  document.querySelector(".sidebar__back").classList.toggle("active");
+  document.querySelector(".sidebar").classList.toggle("active");
+}
+
+// document.querySelector('.catalog__setting').addEventListener('click', )
+
+function priceShow() {
+  document.querySelector("body").style.overflow = "hidden";
+  document.querySelector(".price").classList.toggle("active");
+}
+
+function priceHidden() {
+  document.querySelector("body").style.overflow = "visible";
+  document.querySelector(".price").classList.toggle("active");
+}
+
+// document
+//   .querySelector(".price__button-close")
+//   .addEventListener("click", function () {
+//     document.querySelector("body").style.overflow = "visible";
+//     document.querySelector(".price").classList.toggle("active");
+//   });
 
 // document.querySelector('.menu__list-link').addEventListener('mouseout', function(){
 //   document.querySelector('.menu__dropdown').classList.toggle('active')
@@ -146,7 +173,6 @@ var swiper = new Swiper(".brands__swiper", {
   // centeredSlides: true,
   loop: true,
   breakpoints: {
-
     600: {
       slidesPerView: 3,
       spaceBetween: 18,
@@ -176,35 +202,49 @@ var swiper = new Swiper(".brands__swiper", {
   // },
 });
 
-let btns = document.getElementsByClassName("btn--material");
+// const check = ( param ) => ( e ) => {
 
-// Проходим по кнопкам и добавляем активный класс к текущей/нажатой кнопке
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active");
+// }
 
-    // Если активного класса нет
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
-    // Добавляем активный класс к текущей/нажатой кнопке
-    this.className += " active";
-  });
+function check(e) {
+  console.log(e.className);
+  if (!e.className.includes("active")) {
+    e.className += " active";
+  } else {
+    e.className = e.className.split(' active')[0];
+  }
+  // e.currentTarget.classList.toggle('active')
 }
+// let btns = document.getElementsByClassName("btn--material");
 
+// // Проходим по кнопкам и добавляем активный класс к текущей/нажатой кнопке
+// for (let i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function () {
+//     let current = document.getElementsByClassName("active");
 
+//     // Если активного класса нет
+//     if (current.length > 0) {
+//       current[0].className = current[0].className.replace(" active", "");
+//     }
 
-document.querySelector('.sidebar__back-button').addEventListener("click", function () {
-  document.querySelector('.catalog__setting').classList.toggle('active');
-  document.querySelector('.sidebar').classList.toggle('active');
-})
+//     // Добавляем активный класс к текущей/нажатой кнопке
+//     this.className += " active";
+//   });
+// }
 
-document.querySelector('.catalog__setting').addEventListener("click", function () {
-  document.querySelector('.catalog__setting').classList.toggle('active');
-  document.querySelector('.sidebar').classList.toggle('active');
-})
+// document
+//   .querySelector(".sidebar__back-button")
+//   .addEventListener("click", function () {
+//     document.querySelector(".catalog__setting").classList.toggle("active");
+//     document.querySelector(".sidebar").classList.toggle("active");
+//   });
 
+// document
+//   .querySelector(".catalog__setting")
+//   .addEventListener("click", function () {
+//     document.querySelector(".catalog__setting").classList.toggle("active");
+//     document.querySelector(".sidebar").classList.toggle("active");
+//   });
 
 // var myMap;
 
