@@ -16,6 +16,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body class="card-product-page">
@@ -542,7 +546,7 @@
                 <div class="product__top">
                   <div class="product__block">
                     <h3 class="product__block-title">Размер блока</h3>
-                    <select class="select" name="" id="">
+                    <select class="select select-choices" name="" id="">
                       <option value="1">800х2050мм</option>
                     </select>
                   </div>
@@ -556,9 +560,9 @@
                       />
                       <span>Как сделать замеры?</span>
                     </a>
-                    <button class="product__measure-btn btn--outline">
+                    <a class="product__measure-btn btn--outline">
                       Вызвать замерщика
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="product__block">
@@ -708,20 +712,60 @@
               <div class="product__right-bottom">
                 <div class="product__right-bottom-buttons">
                   <button class="product__postpone">
-                    <img
-                      class="product__postpone-img"
-                      src="./assets/images/ranking.svg"
-                      alt="ranking"
-                    />
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.86669 5.90667L9.74669 7.66667C9.86669 7.90667 10.1867 8.14667 10.4534 8.18667L12.0467 8.45333C13.0667 8.62667 13.3067 9.36 12.5734 10.0933L11.3334 11.34C11.1267 11.5467 11.0067 11.9533 11.0734 12.2467L11.4267 13.7867C11.7067 15 11.06 15.4733 9.98669 14.84L8.49336 13.9533C8.22002 13.7933 7.78002 13.7933 7.50669 13.9533L6.00669 14.8333C4.93336 15.4667 4.28669 14.9933 4.56669 13.78L4.92002 12.24C4.98669 11.9533 4.86669 11.5467 4.66002 11.3333L3.42669 10.1C2.69336 9.36667 2.93336 8.62667 3.95336 8.46L5.54669 8.19333C5.81336 8.14667 6.13336 7.91333 6.25336 7.67333L7.13336 5.91333C7.60669 4.95333 8.39336 4.95333 8.86669 5.90667Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M4 7C3.72667 7 3.5 6.77333 3.5 6.5V1.83333C3.5 1.56 3.72667 1.33333 4 1.33333C4.27333 1.33333 4.5 1.56 4.5 1.83333V6.5C4.5 6.77333 4.27333 7 4 7Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M12 7C11.7267 7 11.5 6.77333 11.5 6.5V1.83333C11.5 1.56 11.7267 1.33333 12 1.33333C12.2733 1.33333 12.5 1.56 12.5 1.83333V6.5C12.5 6.77333 12.2733 7 12 7Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M8 3.66667C7.72667 3.66667 7.5 3.44 7.5 3.16667V1.83333C7.5 1.56 7.72667 1.33333 8 1.33333C8.27333 1.33333 8.5 1.56 8.5 1.83333V3.16667C8.5 3.44 8.27333 3.66667 8 3.66667Z"
+                        fill="#CBCBD1"
+                      />
+                    </svg>
+
                     Отложить
                   </button>
 
                   <button class="product__compare">
-                    <img
-                      class="product__compare-img"
-                      src="./assets/images/chart.svg"
-                      alt="chart"
-                    />
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.6667 15.1667H1.33337C1.06004 15.1667 0.833374 14.94 0.833374 14.6667C0.833374 14.3933 1.06004 14.1667 1.33337 14.1667H14.6667C14.94 14.1667 15.1667 14.3933 15.1667 14.6667C15.1667 14.94 14.94 15.1667 14.6667 15.1667Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M6.5 3.16667V15.1667H9.5V3.16667C9.5 2.43333 9.2 1.83333 8.3 1.83333H7.7C6.8 1.83333 6.5 2.43333 6.5 3.16667Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M2 7.16667V15.1667H4.66667V7.16667C4.66667 6.43333 4.4 5.83333 3.6 5.83333H3.06667C2.26667 5.83333 2 6.43333 2 7.16667Z"
+                        fill="#CBCBD1"
+                      />
+                      <path
+                        d="M11.3334 10.5V15.1667H14V10.5C14 9.76667 13.7334 9.16667 12.9334 9.16667H12.4C11.6 9.16667 11.3334 9.76667 11.3334 10.5Z"
+                        fill="#CBCBD1"
+                      />
+                    </svg>
+
                     Сравнить
                   </button>
                 </div>
@@ -733,7 +777,7 @@
                   <h3 class="call__subtitle card-product">
                     Консультация и заказ по телефону!
                   </h3>
-                  <button class="call__button">Заказать обратный звонок</button>
+                  <a class="call__button" href="#invite">Заказать обратный звонок</a>
                 </div>
               </div>
             </div>
@@ -971,9 +1015,7 @@
     <section class="furniture">
       <div class="container">
         <div class="furniture__wrapper">
-          <h2 class="futnire__title section__title">
-            Вам пригодится
-          </h2>
+          <h2 class="futnire__title section__title">Вам пригодится</h2>
 
           <ul class="furniture__list">
             <li class="furniture__item">
@@ -1476,7 +1518,7 @@
       </div>
     </section>
 
-    <section class="invite">
+    <section class="invite" id="invite">
       <div class="container">
         <div class="invite__wrapper">
           <img
@@ -1803,7 +1845,9 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
