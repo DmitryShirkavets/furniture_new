@@ -30,6 +30,7 @@
       display: block;
       padding: 20px 28px;
       @include text(14px, 400, 18px, $secondaryColor);
+      min-width: max-content;
       transition: 0.3s all;
       -webkit-transition: 0.3s all;
       -moz-transition: 0.3s all;
@@ -95,7 +96,6 @@
         &-link{
           padding: 10px 22px;
           color: $mainColor;
-          min-width: max-content;
         }
       }
 

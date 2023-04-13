@@ -30,7 +30,16 @@
     }
 
     #{$breadcrumbs}__link {
-      @include text(14px, 400, 18px, #7e8290);
+      @include text (14px,400,18px,#7e8290);
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
 
     &.active {

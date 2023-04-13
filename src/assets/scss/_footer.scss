@@ -58,6 +58,15 @@
 
         &-item {
           @include text(16px, 400, 27px, #7e8290);
+          transition: 0.3s all;
+          -webkit-transition: 0.3s all;
+          -moz-transition: 0.3s all;
+          -ms-transition: 0.3s all;
+          -o-transition: 0.3s all;
+
+          &:hover{
+            color: $primaryColor;
+          }
         }
       }
 
@@ -73,6 +82,7 @@
     #{$footer}__map {
       height: 100%;
       width: 100%;
+      position: relative;
 
       @media (max-width: 900px) {
         order: 0;
@@ -129,7 +139,7 @@
         }
       }
 
-      #{$footer}__logo{
+      #{$footer}__logo {
         @media (max-width: 900px) {
           max-width: 118px;
         }

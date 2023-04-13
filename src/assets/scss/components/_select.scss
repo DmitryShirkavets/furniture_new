@@ -1,9 +1,32 @@
-.select{
-    height: 40px;
-    padding: 8px 28px 8px 16px;
-    width: 100%;
+.choices {
+  &__inner {
+    background-color: #fff;
+    border: 1px solid #babcc3;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
 
-    option{
-        @include text(14px, 400, 24px, $secondaryColor);
+  &[data-type*="select-one"]:after {
+    border-color: #7e8290 transparent transparent;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+  }
+
+  &[data-type*="select-one"].is-open:after {
+    border-color: transparent transparent #7e8290;
+  }
+
+  &__list--dropdown .choices__item--selectable.is-highlighted{
+    background-color: #fff;
+
+    &:hover{
+        background-color: #babcc3;
     }
+  }
 }

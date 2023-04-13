@@ -45,6 +45,16 @@
       text-decoration-line: underline;
       padding: 0;
       text-align: start;
+
+      transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+
+        &:hover{
+          color: $primaryColor;
+        }
     }
   }
 }

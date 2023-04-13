@@ -15,7 +15,7 @@
     height: initial;
   }
 
-  &__img{
+  &__img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -28,6 +28,15 @@
 
     #{$card}__title {
       @include text(16px, 400, 20px, $secondaryColor);
+      transition: 0.3s all;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
 
     #{$card}__options {
@@ -65,14 +74,14 @@
           -o-transition: 0.2s all;
         }
 
-        &:hover{
+        &:hover {
           background-color: $secondaryColor;
         }
       }
     }
   }
 
-  &:hover .card__button{
+  &:hover .card__button {
     background-color: $primaryColor;
   }
   &:hover .card__button span {
